@@ -4,16 +4,86 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=GBK">
-<title>登录</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+	<title>登录</title>
+	<style type="text/css"> 
+	#container{
+	width:1062px;
+	margin:0 auto;
+	}
+	#topframe{
+	width:100%;
+	}
+	#topframe_01{
+	width:100%;
+	height:95px;
+	}
+	#topframe_02{
+	width:100%;
+	height:103px;
+	background:#F53D05 url(images/logo.jpg) no-repeat 20px center;
+	}
+	#mainframe {
+	width:1062px;
+	margin:0 auto;
+	margin-top:25px;
+	}
+	#mainframe:after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;	
+	}
+	#botframe {
+	clear:both;
+	margin:0 auto;
+	margin-top:40px;
+	width:100%;
+	padding-bottom:30px;
+	}
+	#mainframe_01 {
+	width:712px;
+	height:334px;
+	float:left;
+	background:url(images/p3.png) no-repeat left top;
+	}
+	#mainframe_02{
+	width:342px;
+	height:333px;
+	float:right;
+	border:1px solid #D5D5D5;
+	border-top:none;
+	position:relative;
+	}
+	.caLogin {
+	width:100%;
+	margin:10px;
+	background:url(images/loginhead.jpg) no-repeat left top;
+	padding-top:40px;
+	position:relative;
+	}
+	</style>
 </head>
-<body>
 
-	<p align="center">
-		<img src="images/xiaohui.jpg" height="200px" />
-	<h1 align="center">湖南大学学生管理系统</h1>
-	<p>
-		<s:form action="Login" method="post" theme="simple">
+<body>
+	<div id="container">
+		<div id="topframe">
+			<div id="topframe_01">
+			</div>
+			<div id="topframe_02">
+			</div>
+		</div>
+	
+		<div id="mainframe">
+			<div id="mainframe_01">
+			
+			</div>
+			
+			<div id="mainframe_02">
+				<p class="caLogin"></p>
+				<p>
+		       <s:form action="Login" method="post" theme="simple">
 		
 			<table align="center">
 				<tr>
@@ -30,9 +100,20 @@
 					<td><s:submit value="登录"></s:submit></td>
 					<td><s:reset value="重置"></s:reset></td>
 				</tr>
+				
+				
 			</table>
-		</s:form>
-		<s:fielderror></s:fielderror>
-		<p align="center">Designed by 304&306
+		    </s:form>
+		     <s:fielderror></s:fielderror>
+		
+		   </div>
+			
+		</div>
+		
+		<div id="botframe">
+		
+		</div>
+		
+	</div>
 </body>
 </html>

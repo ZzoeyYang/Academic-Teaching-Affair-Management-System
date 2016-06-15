@@ -6,18 +6,26 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=GBK">
 <title>显示学生信息</title>
+<style type="text/css">
+			.tablecss{
+				background:#00FF7F url(images/star.jpg);
+				background-size:870px auto
+				opacity:0.55;
+				width:870px;
+			}
+		</style>
 </head>
 <body>
 	<center>
 		<h1>湖南大学学生管理系统</h1>
 		<a href="mainStudent.jsp">首页</a>
-		<table align="center" border="1">
+		<table align="center" border="1" cellpadding="5" class="tablecss" >
 			<tr>
-				<th>学号</th>
-				<th>姓名</th>
-				<th>专业</th>
-				<th>修改</th>
-				<th>删除</th>
+				<th style="text-align: center">学号</th>
+				<th style="text-align: center">姓名</th>
+				<th style="text-align: center">专业</th>
+				<th style="text-align: center">修改</th>
+				<th style="text-align: center">删除</th>
 			</tr>
 			<s:iterator value="students">
 				<tr>
@@ -33,6 +41,6 @@
 		</table>
 <!-- 		<a href="addStudent.jsp">新增学生信息</a> -->
 	</center>
-	<p align="center">Designed by 304&306
+
 </body>
 </html>

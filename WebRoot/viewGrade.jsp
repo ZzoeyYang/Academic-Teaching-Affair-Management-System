@@ -6,6 +6,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=GBK">
 <title>显示成绩信息</title>
+<style type="text/css"> 
+     body{margin: 0px;padding: 0px;font-size: 12px;font-family: Arial;}
+    
+     </style>
 </head>
 <body>
 	<center>
@@ -41,6 +45,6 @@
 		</table>
 		<a href="addGrade.jsp">新增课程信息</a>
 	</center>
-	<p align="center">Designed by 304&306
+	
 </body>
 </html>

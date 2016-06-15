@@ -6,19 +6,27 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=GBK">
 <title>显示课程信息</title>
+<style type="text/css">
+			.tablecss{
+				background:#00FF7F url(images/star.jpg);
+				background-size:870px auto
+				opacity:0.55;
+				width:870px;
+			}
+		</style>
 </head>
 <body>
 	<center>
 		<h1>湖南大学学生管理系统</h1>
 		<a href="mainStudent.jsp">首页</a>
-		<table align="center" border="1">
+		<table align="center" border="1" cellpadding="5" class="tablecss">
 			<tr>
-				<th>课程号</th>
-				<th>课程名</th>
-				<th>开课学期</th>
-				<th>课程学时</th>
-				<th>课程学分</th>
-				<th>选课</th>
+				<th style="text-align">课程号</th>
+				<th style="text-align">课程名</th>
+				<th style="text-align">开课学期</th>
+				<th style="text-align">课程学时</th>
+				<th style="text-align">课程学分</th>
+				<th style="text-align">选课</th>
 			</tr>
 			<s:iterator value='courses'>
 				<tr>
@@ -33,6 +41,5 @@
 			</s:iterator>
 		</table>
 	</center>
-	<p align="center">Designed by 304&306
 </body>
 </html>
